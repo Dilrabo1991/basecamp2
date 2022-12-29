@@ -1,0 +1,20 @@
+<br/>
+<div class="card" style="width: 80%;">
+  <%= render @tg %>
+
+  <div class="card-body">
+    <%= link_to "Edit this tg", edit_tg_path(@tg), class:"allbuttons" %> | |
+    <%= link_to "Back to tgs", project_tgs_path(@tg.project), class:"allbuttons" %>
+    <%= button_to "Destroy this tg", @tg, method: :delete , class:"btn btn-danger" %>
+    <%= render "tgers/form", tger: @tger , class:"allbuttons" %>
+
+    <br />
+    <% @tgers.each do |tger| %>
+      <p><%= tger.title %></p>
+      <% if tger.title %>
+      <%= button_to "Destroy this tg", tger, method: :delete, class:"btn btn-danger" %>
+      <% end %>
+    <% end %>
+  </div>
+</div>
+

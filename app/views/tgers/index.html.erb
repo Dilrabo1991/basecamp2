@@ -1,0 +1,16 @@
+<div class="card" style="width: 80%;">
+  <div class="card-header">
+    <h1>Messages</h1>
+  </div>
+  <div class="card-body">
+    <div id="tgers">
+      <% @tgers.each do |tger| %>
+        <%= render tger %>
+        <p>
+          <%= link_to "Show this tger", tger , class:"allbuttons" %>
+        </p>
+      <% end %>
+    </div>
+    <%= link_to "New tger", new_tger_path , class:"allbuttons" %>
+  </div>
+</div>

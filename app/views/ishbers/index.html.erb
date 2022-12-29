@@ -1,0 +1,19 @@
+<br/>
+<div class="card" style="width: 80%;">
+  <div class="card-header">
+    <h1>Ishbers</h1>
+  </div>
+  <div class="card-body">
+  <%= render "form", ishber: @ishber %>
+  <div id="ishbers">
+    <% @ishbers.each do |ishber| %>
+      <%= ishber.title %> <br>
+        <% if ishber.title %>
+        <%= button_to "Destroy this ishber", ishber, method: :delete , class:"btn btn-danger" %> <br>
+        <% end %>  
+    
+    <% end %>
+  </div>
+  <%= link_to "Back", project_path(@ishber.project_id) , class:"allbuttons" %>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+<br/>
+<div class="card" style="width: 80%;">
+  <div class="card-header">
+    <h1>Messenge</h1>
+  </div>
+
+  <div class="card-body">
+    <div id="tgs">
+      <% @tgs.each do |tg| %>
+        <%= render tg %>
+        <p>
+          <%= link_to "Show this tg", tg , class:"allbuttons"%>
+        </p>
+      <% end %>
+    </div>
+
+    <%= link_to "New tg", new_project_tg_path(@project), class:"allbuttons" %> <br>
+    <%= link_to "Back", project_path(@project) , class:"allbuttons"%>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+<br/>
+<div class="card" style="width: 80%;">
+  <div class="card-header">
+    <h1>Projects</h1>
+  </div>
+
+  <div class="card-body">
+    <div id="projects">
+      <% @projects.each do |project| %>
+        <%= render project %>
+        <p>
+          <%= link_to "Show this project", project , class:"allbuttons" %>
+        </p>
+      <% end %>
+    </div>
+    <%= link_to "New project", new_project_path , class:"allbuttons"%> <br/>
+    <%= button_to "Log Out", destroy_user_session_path, class:"btn btn-danger me-md-2 btn-hover", method: :delete %>
+  </div>
+</div>
+

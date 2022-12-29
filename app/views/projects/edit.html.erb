@@ -1,0 +1,15 @@
+<br/>
+<div class="card" style="width: 80%;">
+  <div class="card-header">
+    <h1>Editing project</h1>
+  </div>
+
+  <div class="card-body">
+    <%= render "form", project: @project %>
+    <br>
+    <div>
+      <%= link_to "Show this project", @project , class:"allbuttons"%> | |
+      <%= link_to "Back to projects", projects_path , class:"allbuttons"%>
+    </div>
+  </div>
+</div>

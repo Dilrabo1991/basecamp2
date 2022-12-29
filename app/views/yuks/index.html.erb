@@ -1,0 +1,20 @@
+<br/>
+<div class="card" style="width: 80%;">
+  <div class="card-header">
+    <h1>Attachments</h1>
+  </div>
+
+  <div class="card-body">
+    <%= render "form", yuk: @yuk %>
+    <div id="yuks">
+      <% @yuks.each do |yuk| %>
+        <% if yuk.yuker.attached? %>
+        <%= link_to yuk.yuker.filename,  rails_blob_path(yuk.yuker, disposition: "attachment") %> <br>
+
+        <%= link_to 'Destroy', [yuk.project, yuk], 'data-turbo-method': :delete,class: "more-link"  %> <br>
+        <% end %>
+      <% end %>
+    </div>
+    <%= link_to "Back", project_path(@project) , class:"allbuttons" %>
+  </div>
+</div>

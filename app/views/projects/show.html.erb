@@ -1,0 +1,15 @@
+<br/>
+<div class="card" style="width: 80%;">
+  <div class="card-header">
+    <%= render @project %>
+  </div>
+
+  <div class="card-body">
+    <%= link_to "Edit this project", edit_project_path(@project) , class:"allbuttons" %> | |
+    <%= link_to "Back to projects", projects_path , class:"allbuttons" %> 
+    <%= button_to "Destroy this project", @project, method: :delete , class:"btn btn-danger"%>
+    <%= link_to "Messages", project_tgs_path(@project) , class:"allbuttons"%>  <br> 
+    <%= link_to "Attachments", project_yuks_path(@project) , class:"allbuttons"%> <br>
+    <%= link_to  "To-Dos", project_ishbers_path(@project) , class:"allbuttons"%>
+  </div>
+</div>

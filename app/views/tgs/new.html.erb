@@ -1,0 +1,11 @@
+<br/>
+<div class="card" style="width: 80%;">
+  <div class="card-header">
+    <h1>New Messenge</h1>
+  </div>
+  <div class="card-body">
+    <%= render "form", tg: @tg %>
+    <br>
+    <%= link_to "Back to tgs", project_tgs_path(@project) , class:"allbuttons"%>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<%= form_with(model: yuk) do |form| %>
+  <% if yuk.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(yuk.errors.count, "error") %> prohibited this yuk from being saved:</h2>
+
+      <ul>
+        <% yuk.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="mb-3 row">
+    <%= form.file_field :yuker %>
+  </div>
+  <div class="col-sm-10">
+    <%= form.text_field :project_id, type: :hidden, class: "form-control" %>
+  </div>
+  <div class="createbutton">
+    <%= form.submit class:"submit" %>
+  </div>
+<% end %>

@@ -1,0 +1,13 @@
+<div class="card" style="width: 80%;">
+  <div class="card-header">
+    <h1>Editing Messages</h1>
+  </div>
+
+  <%= render "form", tg: @tg %>
+  <br>
+
+  <div class="card-body">
+    <%= link_to "Show this tg", @tg , class:"allbuttons" %> | |
+    <%= link_to "Back", tg_path(@tg) , class:"allbuttons" %>
+  </div>
+</div>

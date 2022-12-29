@@ -1,0 +1,12 @@
+<br/>
+<div class="card" style="width: 80%;">
+  <div class="card-header">
+    <%= render @tger %>
+  </div>
+
+  <div class="card-body">
+    <%= link_to "Edit this tger", edit_tger_path(@tger) , class:"allbuttons"%> | |
+    <%= link_to "Back to tgers", tgers_path, class:"allbuttons" %>
+    <%= button_to "Destroy this tger", @tger, method: :delete, class:"btn btn-danger" %>
+  </div>
+</div>

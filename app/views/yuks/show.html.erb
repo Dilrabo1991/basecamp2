@@ -1,0 +1,11 @@
+<div class="card" style="width: 80%;">
+  <div class="card-header">
+    <%= render @yuk %>
+  </div>
+
+  <div class="card-body">
+    <%= link_to "Edit this yuk", edit_yuk_path(@yuk) , class:"allbuttons" %> | |
+    <%= link_to "Back to yuks", yuks_path , class:"allbuttons"%>
+    <%= button_to "Destroy this yuk", @yuk, method: :delete , class:"btn btn-danger" %>
+  </div>
+</div>
