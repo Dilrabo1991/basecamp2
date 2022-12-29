@@ -1,24 +1,39 @@
-# README
+# Welcome to My Basecamp 2
+Welcome to my project Basecamp 2
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# My Basecamp
 
-Things you may want to cover:
+My project has 2 admin types <strong>Moderator</strong> and <strong>Admin</strong>
+The <strong>Moderator</strong> admin part is not finished, I will finish it soon!
+# Demo
 
-* Ruby version
+[My Basecamp Demo](https://basecamp-qwasar2.herokuapp.com/) 
 
-* System dependencies
+# Github
 
-* Configuration
+[Dilrabo1991](https://github.com/Dilrabo1991/basecamp2.git/)
 
-* Database creation
+# Task
+I had a hard time learning rails at first, but now I'm pretty good at it!
+I'm mainly having trouble working on the attachment but now easy for me!
 
-* Database initialization
+# Description
+I worked hard to solve the problems!
+Mainly google and youtube helped me 
+but there are very few rails related
+resources on youtube which made it difficult for me to learn rails!
 
-* How to run the test suite
+# Installation
+ 
+ ```shell
+bundle install
+```
+ ```shell
+ rails db:migrate
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+## Usage
 
-* Deployment instructions
-
-* ...
+ ```shell
+ rails s
+```
