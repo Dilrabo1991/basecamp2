@@ -1,10 +1,6 @@
 # Welcome to My Basecamp 2
 Welcome to my project Basecamp 2
 
-# My Basecamp
-
-My project has 2 admin types <strong>Moderator</strong> and <strong>Admin</strong>
-The <strong>Moderator</strong> admin part is not finished, I will finish it soon!
 # Demo
 
 [My Basecamp Demo](https://basecamp-qwasar2.herokuapp.com/) 
