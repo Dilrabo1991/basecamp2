@@ -29,8 +29,13 @@
 
     <%= form.number_field :user_id, id: :project_user_id, value: current_user.id, type: :hidden %>
 
-    <div class="createbutton">
-      <%= form.submit class:"submit" %>
+    <div >
+      <%= form.submit class:"submit createbutton border border-success border-2 rounded-pill bg-warning text-white" %>
     </div>
+    <style>
+    .createbutton{
+      color: red;
+    }
+    </style>
   <% end %>
 </div>
