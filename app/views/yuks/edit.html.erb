@@ -6,7 +6,9 @@
   <div class="card-body">
     <%= render "form", yuk: @yuk %>
     <br>
-    <%= link_to "Show this yuk", @yuk , class:"allbuttons" %> | |
-    <%= link_to "Back to yuks", yuks_path , class:"allbuttons"  %>
+    <div class="row">
+    <%= link_to "Show this yuk", @yuk , class:"allbuttons col-6 text-center" %> 
+    <%= link_to "Back to yuks", yuks_path , class:"allbuttons col-6 text-center"  %>
+      </div>
   </div>
 </div>
