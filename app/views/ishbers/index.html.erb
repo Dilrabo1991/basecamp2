@@ -1,7 +1,7 @@
 <br/>
 <div class="card" style="width: 80%;">
   <div class="card-header">
-    <h1>Ishbers</h1>
+    <h1>Tasks</h1>
   </div>
   <div class="card-body">
   <%= render "form", ishber: @ishber %>
@@ -9,11 +9,27 @@
     <% @ishbers.each do |ishber| %>
       <%= ishber.title %> <br>
         <% if ishber.title %>
-        <%= button_to "Destroy this ishber", ishber, method: :delete , class:"btn btn-danger" %> <br>
+        <%= button_to "Delete this tasks", ishber, method: :delete , class:"btn btn-danger btn-hover button rounded-pill p-2 col-3" %> <br>
         <% end %>  
     
     <% end %>
   </div>
   <%= link_to "Back", project_path(@ishber.project_id) , class:"allbuttons" %>
   </div>
+  <style>
+      .card{
+        background: #F8F4E5;
+        border: 1px solid #000;
+        box-shadow: 15px 15px #ffa580;
+      }
+      .button{
+        padding-left: 20px;
+        display: block;
+        margin: 0 auto;
+        padding: 0 20px;
+        background: #ffa580;
+        border: 1px solid #000;
+        box-shadow: 5px 5px #95A4FF;
+      }
+    </style>
 </div>
