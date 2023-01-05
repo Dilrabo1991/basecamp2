@@ -1,13 +1,15 @@
 <br/>
 <div class="card" style="width: 80%;">
   <div class="card-header">
-    <h1>Editing ishber</h1>
+    <h1>Editing Tasks</h1>
   </div>
 
   <div class="card-body">
     <%= render "form", ishber: @ishber %>
   <br>
-    <%= link_to "Show this ishber", @ishber, class:"allbuttons" %> | |
-    <%= link_to "Back to ishbers", ishbers_path, class:"allbuttons" %>
+    <div class="row">
+      <%= link_to "Show this Tasks", @ishber, class:"allbuttons col-6 text-center" %>
+      <%= link_to "Back to Tasks", ishbers_path, class:"allbuttons col-6 text-center" %>
+    </div>
   </div>
 </div>
