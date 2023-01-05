@@ -8,13 +8,24 @@
     <div id="tgs">
       <% @tgs.each do |tg| %>
         <%= render tg %>
-        <p>
-          <%= link_to "Show this tg", tg , class:"allbuttons"%>
+        <p class="row">
+          <%= link_to "Show this tg", tg , class:"allbuttons col-12 text-center"%>
         </p>
       <% end %>
     </div>
-
-    <%= link_to "New tg", new_project_tg_path(@project), class:"allbuttons" %> <br>
-    <%= link_to "Back", project_path(@project) , class:"allbuttons"%>
+    <div class="row link">
+      <%= link_to "New tg", new_project_tg_path(@project), class:"allbuttons col-6" %> <br>
+      <%= link_to "Back", project_path(@project) , class:"allbuttons col-6"%>
+    </div>
+    <style>
+      .link{
+        text-align: center;
+      }
+      .card{
+        background: #F8F4E5;
+        border: 1px solid #000;
+        box-shadow: 15px 15px #ffa580;
+      }
+    </style>
   </div>
 </div>
