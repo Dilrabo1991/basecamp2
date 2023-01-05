@@ -28,17 +28,26 @@ body {
     font-size: 20px;    
     text-decoration: none;
 }
-
+.card{
+    background: #F8F4E5;
+    border: 1px solid #000;
+    box-shadow: 15px 15px #ffa580;
+  }
 .submit {
-    background-color: pink; 
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 5px;
+    padding-left: 20px;
+    height: 40px;
+    width: 180px;
+    display: block;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: #ffa580;
+    border: 1px solid #000;
+    box-shadow: 5px 5px #95A4FF;
+    border-radius: 20px;
+    color: #fff;
+    }
+.submit:hover{
+    background-color: #dc3545;
 }
 
 h1 {
