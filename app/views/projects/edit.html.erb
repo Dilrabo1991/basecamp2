@@ -7,9 +7,27 @@
   <div class="card-body">
     <%= render "form", project: @project %>
     <br>
-    <div>
-      <%= link_to "Show this project", @project , class:"allbuttons"%> | |
-      <%= link_to "Back to projects", projects_path , class:"allbuttons"%>
+    <div class="row">
+      <%= link_to "Show this project", @project , class:"allbuttons col-5 rounded-pill"%>
+      <%= link_to "Back to projects", projects_path , class:"allbuttons col-5 rounded-pill"%>
     </div>
+    <style>
+    .card{
+    background: #F8F4E5;
+    border: 1px solid #000;
+    box-shadow: 15px 15px #ffa580;
+  }
+  .allbuttons{
+    text-align: center;
+    padding-left: 20px;
+    display: block;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: #ffa580;
+    border: 1px solid #000;
+    box-shadow: 5px 5px #95A4FF;
+    color: #000;
+  }
+    </style>
   </div>
 </div>
