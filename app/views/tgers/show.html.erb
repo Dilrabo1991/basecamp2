@@ -5,8 +5,26 @@
   </div>
 
   <div class="card-body">
-    <%= link_to "Edit this tger", edit_tger_path(@tger) , class:"allbuttons"%> | |
-    <%= link_to "Back to tgers", tgers_path, class:"allbuttons" %>
-    <%= button_to "Destroy this tger", @tger, method: :delete, class:"btn btn-danger" %>
+    <div class="row">
+      <%= link_to "Edit this tger", edit_tger_path(@tger) , class:"allbuttons col-6 text-center"%>
+      <%= link_to "Back to tgers", tgers_path, class:"allbuttons col-6 text-center" %>
+    </div>
+      <%= button_to "Destroy this tger", @tger, method: :delete, class:"btn btn-danger btn-hover button rounded-pill p-2 col-3" %>
   </div>
+    <style>
+      .card{
+        background: #F8F4E5;
+        border: 1px solid #000;
+        box-shadow: 15px 15px #ffa580;
+      }
+      .button{
+        padding-left: 20px;
+        display: block;
+        margin: 0 auto;
+        padding: 0 20px;
+        background: #ffa580;
+        border: 1px solid #000;
+        box-shadow: 5px 5px #95A4FF;
+      }
+    </style>
 </div>
