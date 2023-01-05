@@ -5,8 +5,10 @@
   </div>
 
   <div class="card-body">
-    <%= link_to "Edit this ishber", edit_ishber_path(@ishber) , class:"allbuttons" %> | |
-    <%= link_to "Back to ishbers", ishbers_path , class:"allbuttons" %>
-    <%= button_to "Destroy this ishber", @ishber, method: :delete, class:"btn btn-danger"%>
+    <div class="row">
+      <%= link_to "Edit this Tasks", edit_ishber_path(@ishber) , class:"allbuttons col-6 text-center" %>
+      <%= link_to "Back to Tasks", ishbers_path , class:"allbuttons  col-6 text-center" %>
+    </div>
+    <%= button_to "Destroy this Tasks", @ishber, method: :delete, class:"btn btn-danger"%>
   </div>
 </div>
