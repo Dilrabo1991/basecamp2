@@ -5,16 +5,58 @@
   </div>
 
   <div class="card-body">
-    <div id="projects">
-      <% @projects.each do |project| %>
+    <div id="projects" >
+      <div class="texts">
+        <% @projects.each do |project| %>
         <%= render project %>
+      </div>
+      <div class="row p-2">
         <p>
-          <%= link_to "Show this project", project , class:"allbuttons" %>
+          <%= link_to "Show this project", project , class:"btn btn-danger me-md-2 btn-hover  buttons col-4 p-1" %>
         </p>
+      </div>
       <% end %>
     </div>
-    <%= link_to "New project", new_project_path , class:"allbuttons"%> <br/>
-    <%= button_to "Log Out", destroy_user_session_path, class:"btn btn-danger me-md-2 btn-hover", method: :delete %>
+
+     <br/>
+     <%= link_to "New project", new_project_path , class:"btn btn-danger me-md-2 btn-hover  buttons col-4 p-1"%>
+    <%= button_to "Log Out", destroy_user_session_path, class:"btn btn-danger me-md-2 btn-hover button", method: :delete %>
   </div>
 </div>
+<style>
+.card-body{
+  background: #f8f4e5;
+}
+.texts{
+  border-bottom: 1px solid black;
+}
+.button{
+    padding-left: 20px;
+    display: block;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: #ffa580;
+    border: 1px solid #000;
+    box-shadow: 5px 5px #95A4FF;
+    color: #000;
+  }
+  .buttons{
+    # padding-left: 20px;
+    # display: grid;
+    text-align: center;
+    color: #000;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: #ffa580;
+    border: 1px solid #000;
+    box-shadow: 5px 5px #95A4FF;
+  }
+.card{
+    font-size: 16pt;
+    font-family: "Fjalla One";
+    border: 1px solid #000;
+    box-shadow: 15px 15px #ffa580;
+    
+  }
+</style>
 
