@@ -4,6 +4,11 @@ class TgsController < ApplicationController
   # GET /tgs or /tgs.json
   def index
     @tgs = @project.tgs
+    @tgs.each do |tg|
+      if tg.project.user != current_user
+        redirect_to root_path
+      end
+    end
   end
 
   # GET /tgs/1 or /tgs/1.json

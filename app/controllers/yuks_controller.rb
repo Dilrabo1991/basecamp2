@@ -4,8 +4,18 @@ class YuksController < ApplicationController
 
   # GET /yuks or /yuks.json
   def index
-    @yuks = Yuk.all
+    @yuks = @project.yuks
     @yuk = @project.yuks.new
+
+    
+    @yuks.each do |yuk|
+      if yuk.project.user != current_user 
+        return redirect_to root_path
+      end
+      
+    end
+    
+ 
   end
 
   # GET /yuks/1 or /yuks/1.json

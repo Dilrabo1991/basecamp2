@@ -7,6 +7,12 @@ class IshbersController < ApplicationController
     @ishbers = @project.ishbers
     @ishber = @project.ishbers.new
 
+    
+    @ishbers.each do |ishber|
+      if ishber.project.user != current_user 
+        return redirect_to root_path
+      end
+    end
   end
 
   # GET /ishbers/1 or /ishbers/1.json
